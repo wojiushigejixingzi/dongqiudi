@@ -1,0 +1,43 @@
+<include file="Public:header" />
+<style>
+table.list_2 th{
+	text-align: center;
+}
+
+
+
+</style>
+<div id="main" class="cf">
+	<div id="stat_list">
+	<if condition="ACTION_NAME eq 'index'">
+		<a rel="51" href="{:U('data/index')}" class="sel">中超 <span class="hover"></span></a>
+	<else/>
+		<a rel="51" href="{:U('data/index')}">中超 <span class="hover"></span></a>
+	</if>
+	<if condition="ACTION_NAME eq 'yingchao'">
+		<a rel="8" href="{:U('data/yingchao')}" class="sel">英超 <span class="hover"></span></a>
+	<else/>
+		<a rel="8" href="{:U('data/yingchao')}">英超 <span class="hover"></span></a>
+	</if>
+	<if condition="ACTION_NAME eq 'xijia'">
+		<a rel="7" href="{:U('data/xijia')}" class="sel">西甲 <span class="hover"></span></a>
+	<else/>
+		<a rel="7" href="{:U('data/xijia')}">西甲 <span class="hover"></span></a>
+	</if>
+	<if condition="ACTION_NAME eq 'dejia'">
+		<a rel="9" href="{:U('data/dejia')}" class="sel">德甲 <span class="hover"></span></a>
+	<else/>
+		<a rel="9" href="{:U('data/dejia')}">德甲 <span class="hover"></span></a>
+	</if>
+	<if condition="ACTION_NAME eq 'yijia'">
+		<a rel="13" href="{:U('data/yijia')}" class="sel">意甲 <span class="hover"></span></a>
+	<else/>
+		<a rel="13" href="{:U('data/yijia')}">意甲 <span class="hover"></span></a>
+	</if>
+	<if condition="ACTION_NAME eq 'fajia'">
+		<a rel="16" href="{:U('data/fajia')}" class="sel">法甲 <span class="hover"></span></a>
+	<else/>
+		<a rel="16" href="{:U('data/fajia')}">法甲 <span class="hover"></span></a>
+	</if>
+	</div>
+        

@@ -1,0 +1,242 @@
+[ 2017-02-16T17:14:21+08:00 ] 123.52.72.183 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001361s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 )  [ RunTime:0.001389s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id  [ RunTime:0.002462s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000452s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000507s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 766 行.
+NOTIC: [8] Use of undefined constant thumb - assumed 'thumb' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 767 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 767 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 768 行.
+NOTIC: [8] Use of undefined constant description - assumed 'description' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 770 行.
+NOTIC: [8] Use of undefined constant display_time - assumed 'display_time' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 772 行.
+NOTIC: [8] Use of undefined constant official_account - assumed 'official_account' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 772 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 773 行.
+NOTIC: [8] Use of undefined constant comments_total - assumed 'comments_total' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 773 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.035141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035186s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000440s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000338s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000245s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001546s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000437s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2017-02-16T17:14:21+08:00 ] 123.52.72.183 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-02-16T17:39:30+08:00 ] 123.52.72.183 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001516s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 )  [ RunTime:0.001326s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id  [ RunTime:0.002526s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000402s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 766 行.
+NOTIC: [8] Use of undefined constant thumb - assumed 'thumb' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 767 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 767 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 768 行.
+NOTIC: [8] Use of undefined constant description - assumed 'description' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 770 行.
+NOTIC: [8] Use of undefined constant display_time - assumed 'display_time' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 772 行.
+NOTIC: [8] Use of undefined constant official_account - assumed 'official_account' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 772 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 773 行.
+NOTIC: [8] Use of undefined constant comments_total - assumed 'comments_total' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 773 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019715s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000435s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000339s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000242s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001499s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000467s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-02-16T17:39:30+08:00 ] 123.52.72.183 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-02-16T22:00:31+08:00 ] 171.12.11.187 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001589s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 )  [ RunTime:0.001721s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id  [ RunTime:0.002895s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000420s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 766 行.
+NOTIC: [8] Use of undefined constant thumb - assumed 'thumb' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 767 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 767 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 768 行.
+NOTIC: [8] Use of undefined constant description - assumed 'description' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 770 行.
+NOTIC: [8] Use of undefined constant display_time - assumed 'display_time' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 772 行.
+NOTIC: [8] Use of undefined constant official_account - assumed 'official_account' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 772 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 773 行.
+NOTIC: [8] Use of undefined constant comments_total - assumed 'comments_total' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 773 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019577s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000461s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000320s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000244s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001528s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000416s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2017-02-16T22:00:31+08:00 ] 171.12.11.187 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-02-16T22:18:44+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=6
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.002876s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.id = '6' ) AND ( d.id = '6' ) LIMIT 1   [ RunTime:0.001353s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000410s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant max_vote - assumed 'max_vote' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 312 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 314 行.
+NOTIC: [8] Use of undefined constant max_vote - assumed 'max_vote' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 317 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 322 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 322 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013478s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000431s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000340s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000252s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001561s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000472s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2017-02-16T22:18:44+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=6
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-02-16T22:18:53+08:00 ] 180.153.160.24 /dongqiudi/index.php?m=index&a=show&id=6
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001699s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.id = '6' ) AND ( d.id = '6' ) LIMIT 1   [ RunTime:0.001099s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000588s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000643s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant max_vote - assumed 'max_vote' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 312 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 314 行.
+NOTIC: [8] Use of undefined constant max_vote - assumed 'max_vote' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 317 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 322 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/8900f6c60654ed91e9ce9789196cfe05.php 第 322 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017324s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000441s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000344s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000249s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001523s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000470s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-02-16T22:18:53+08:00 ] 180.153.160.24 /dongqiudi/index.php?m=index&a=show&id=6
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-02-16T22:21:44+08:00 ] 171.12.11.187 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001484s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 )  [ RunTime:0.001360s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id  [ RunTime:0.002652s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000407s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 764 行.
+NOTIC: [8] Use of undefined constant thumb - assumed 'thumb' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 765 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 765 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 766 行.
+NOTIC: [8] Use of undefined constant description - assumed 'description' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 768 行.
+NOTIC: [8] Use of undefined constant display_time - assumed 'display_time' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 770 行.
+NOTIC: [8] Use of undefined constant official_account - assumed 'official_account' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 770 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 771 行.
+NOTIC: [8] Use of undefined constant comments_total - assumed 'comments_total' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 771 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019795s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000504s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000345s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000288s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001633s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000497s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2017-02-16T22:21:44+08:00 ] 171.12.11.187 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-02-16T22:25:29+08:00 ] 171.12.11.187 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001522s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 )  [ RunTime:0.001231s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id  [ RunTime:0.002483s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000422s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 764 行.
+NOTIC: [8] Use of undefined constant thumb - assumed 'thumb' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 765 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 765 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 766 行.
+NOTIC: [8] Use of undefined constant description - assumed 'description' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 768 行.
+NOTIC: [8] Use of undefined constant display_time - assumed 'display_time' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 770 行.
+NOTIC: [8] Use of undefined constant official_account - assumed 'official_account' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 770 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 771 行.
+NOTIC: [8] Use of undefined constant comments_total - assumed 'comments_total' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 771 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.022016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022073s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000624s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000347s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000265s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001767s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000492s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-02-16T22:25:29+08:00 ] 171.12.11.187 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

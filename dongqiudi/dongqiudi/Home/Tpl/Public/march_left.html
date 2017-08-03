@@ -1,0 +1,28 @@
+<include file="Public:header" />
+<div id="main" class="cf">
+    <div id="match_list">
+		<a href="{:U('march/index')}" rel="63" class=" sel">重要</a>
+		<a href="{:U('march/zhongchao')}" rel="63" class=" ">中超</a>
+		<a href="{:U('march/yingchao')}" rel="63" class=" ">英超</a>
+		<a href="{:U('march/xijia')}" rel="63" class=" ">西甲</a>
+		<a href="{:U('march/dejia')}" rel="63" class=" ">德甲</a>
+		<a href="{:U('march/yijia')}" rel="63" class=" ">意甲</a>
+		<a href="{:U('march/fajia')}" rel="63" class=" ">法甲</a>
+	</div>
+	<script type="text/javascript">
+		  $(document).ready(function(){
+			$("#match_list a").each(function(){
+				$this = $(this);
+				if($this[0].href==String(window.location)){  
+					$("#match_list a").removeClass("sel");		
+					$this.addClass("sel");  
+				}  
+			});  
+		}); 
+	</script>
+    <div id="match_detail">
+        <h3 class="cf">
+            <span class="left">比赛列表
+</span>
+            <span class="Zebra_DatePicker_Icon_Wrapper" style="display: inline-block; position: relative; float: none; top: auto; right: auto; bottom: auto; left: auto;"><input type="text" id="date_input" placeholder="按日期查询比赛" name="dateSel" class="date" readonly="readonly" style="position: relative; top: auto; right: auto; bottom: auto; left: auto;"><button type="button" class="Zebra_DatePicker_Icon Zebra_DatePicker_Icon_Inside" style="top: 0px; left: 121px;">Pick a date</button></span>
+        </h3>

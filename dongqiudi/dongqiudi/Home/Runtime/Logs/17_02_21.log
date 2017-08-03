@@ -1,0 +1,96 @@
+[ 2017-02-21T17:00:00+08:00 ] 123.149.115.185 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001668s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 )  [ RunTime:0.001434s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 1 )  [ RunTime:0.001113s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 2 )  [ RunTime:0.001104s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 3 )  [ RunTime:0.001100s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 4 )  [ RunTime:0.001147s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 5 )  [ RunTime:0.001086s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 6 )  [ RunTime:0.001100s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 7 )  [ RunTime:0.001232s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 8 )  [ RunTime:0.001203s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 9 )  [ RunTime:0.001209s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 10 )  [ RunTime:0.001267s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 11 )  [ RunTime:0.001216s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 12 )  [ RunTime:0.001153s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 13 )  [ RunTime:0.001148s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001624s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001689s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 934 行.
+NOTIC: [8] Use of undefined constant thumb - assumed 'thumb' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 935 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 935 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 936 行.
+NOTIC: [8] Use of undefined constant description - assumed 'description' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 938 行.
+NOTIC: [8] Use of undefined constant display_time - assumed 'display_time' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 940 行.
+NOTIC: [8] Use of undefined constant official_account - assumed 'official_account' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 940 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 941 行.
+NOTIC: [8] Use of undefined constant comments_total - assumed 'comments_total' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 941 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.049188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049254s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000549s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000418s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000287s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001829s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000458s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-02-21T17:00:00+08:00 ] 123.149.115.185 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-02-21T17:00:09+08:00 ] 101.226.33.240 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001392s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 )  [ RunTime:0.001043s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 1 )  [ RunTime:0.000923s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 2 )  [ RunTime:0.000947s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 3 )  [ RunTime:0.000932s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 4 )  [ RunTime:0.000999s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 5 )  [ RunTime:0.000954s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 6 )  [ RunTime:0.000967s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 7 )  [ RunTime:0.001009s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 8 )  [ RunTime:0.000960s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 9 )  [ RunTime:0.000969s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 10 )  [ RunTime:0.001012s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 11 )  [ RunTime:0.001010s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 12 )  [ RunTime:0.000929s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.news_level = 13 )  [ RunTime:0.001027s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000504s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000551s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 934 行.
+NOTIC: [8] Use of undefined constant thumb - assumed 'thumb' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 935 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 935 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 936 行.
+NOTIC: [8] Use of undefined constant description - assumed 'description' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 938 行.
+NOTIC: [8] Use of undefined constant display_time - assumed 'display_time' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 940 行.
+NOTIC: [8] Use of undefined constant official_account - assumed 'official_account' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 940 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 941 行.
+NOTIC: [8] Use of undefined constant comments_total - assumed 'comments_total' /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/7e4848229090366086cc7eeb3bfc0798.php 第 941 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.033380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033428s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000553s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000374s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000341s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001808s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000486s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2017-02-21T17:00:09+08:00 ] 101.226.33.240 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

@@ -1,0 +1,294 @@
+[ 2017-04-29T12:11:04+08:00 ] 171.12.11.187 /dongqiudi/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000555s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005725s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000350s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000381s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000292s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001561s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000532s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000577s ]
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:05+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=user&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001433s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000503s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000556s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005760s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000371s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000401s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000309s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001683s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000526s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-04-29T12:11:05+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=user&a=login
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:06+08:00 ] 171.12.11.187 /dongqiudi/admin.php/Public/verify/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-04-29T12:11:06+08:00 ] 171.12.11.187 /dongqiudi/admin.php/Public/verify/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:14+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=user&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001519s ]
+SQL: SELECT * FROM `fc_user` WHERE ( username = "admin" ) LIMIT 1   [ RunTime:0.001192s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000571s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005658s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000370s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000368s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000316s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001634s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000549s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000593s ]
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:15+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=user&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001614s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000499s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000552s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005840s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000373s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000391s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000310s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001654s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000550s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-04-29T12:11:15+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=user&a=login
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:17+08:00 ] 171.12.11.187 /dongqiudi/admin.php/Public/verify/?
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-04-29T12:11:17+08:00 ] 171.12.11.187 /dongqiudi/admin.php/Public/verify/?
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:23+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=user&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001569s ]
+SQL: SELECT * FROM `fc_user` WHERE ( username = "admin" ) LIMIT 1   [ RunTime:0.001184s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000561s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000610s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005641s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000353s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000363s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000311s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001589s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000533s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000576s ]
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:24+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000443s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009052s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000407s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000361s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000308s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001628s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000539s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2017-04-29T12:11:24+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=index
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:24+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000459s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000512s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008944s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000377s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000377s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000287s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001611s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000505s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-04-29T12:11:24+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=index
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:25+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=pass
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000441s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006457s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000365s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000410s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000321s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001635s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000533s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2017-04-29T12:11:25+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=pass
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:28+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `fc_news_data` [ RunTime:0.001630s ]
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Lib/Action/IndexAction.class.php 第 96 行.
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.id = %d ) LIMIT 1   [ RunTime:0.001258s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.id = %d ) LIMIT 1  
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000472s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: jis /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/cbcf4388101292f27eb9b214ccec63b6.php 第 120 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010536s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000392s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000398s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000289s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001617s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000515s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-04-29T12:11:28+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=add
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:49+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001699s ]
+SQL: SHOW COLUMNS FROM `fc_news_data` [ RunTime:0.001453s ]
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Lib/Action/IndexAction.class.php 第 96 行.
+NOTIC: [8] Undefined index: key_words /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Lib/Action/IndexAction.class.php 第 228 行.
+NOTIC: [8] Undefined index: description /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Lib/Action/IndexAction.class.php 第 231 行.
+SQL: INSERT INTO `fc_news` (`position`,`thumb`,`title`,`inputtime`,`news_level`,`user_id`) VALUES (1,'uploads/image/20170429/1493439098916922.jpg','经纪人：华夏幸福争抢科斯�\�',1493439109,4,4) [ RunTime:0.001532s ]
+SQL: INSERT INTO `fc_news_data` (`content`) VALUES ('<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 10px 0px; list-style: none; word-wrap: break-word; word-break: normal; text-indent: 2em; line-height: 1.7; color: rgb(52, 52, 52); font-family: &quot;Source Sans Pro&quot;, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, &quot;WenQuanYi Micro Hei&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑, STHeiti, &quot;WenQuanYi Micro Hei&quot;, SimSun, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);\">一家名为“fotbolltransfers”的瑞典媒体近日报道称，中超河北华夏幸福也加入了争夺切尔西前锋迭�\�-科斯塔的行列，希望在夏窗引进他�\�</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 10px 0px; list-style: none; word-wrap: break-word; word-break: normal; text-indent: 2em; line-height: 1.7; color: rgb(52, 52, 52); font-family: &quot;Source Sans Pro&quot;, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, &quot;WenQuanYi Micro Hei&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑, STHeiti, &quot;WenQuanYi Micro Hei&quot;, SimSun, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);\"><img src=\"/dongqiudi/uploads/image/20170429/1493439098916922.jpg\"/></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 10px 0px; list-style: none; word-wrap: break-word; word-break: normal; text-indent: 2em; line-height: 1.7; color: rgb(52, 52, 52); font-family: &quot;Source Sans Pro&quot;, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, &quot;WenQuanYi Micro Hei&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑, STHeiti, &quot;WenQuanYi Micro Hei&quot;, SimSun, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);\">瑞典籍经纪人安德�\�-费利�\�-赫那罗称，他的同事在这项交易中代表河北华夏幸福，一直与门德斯方面保持着联系。他说：“是的，门德斯他们来自葡萄牙，我老家也是那里的，我知道这桩转会的情况，有多少人想要参与科斯塔的转会，而我也一直是中间人。�\�</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 10px 0px; list-style: none; word-wrap: break-word; word-break: normal; text-indent: 2em; line-height: 1.7; color: rgb(52, 52, 52); font-family: &quot;Source Sans Pro&quot;, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, &quot;WenQuanYi Micro Hei&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑, STHeiti, &quot;WenQuanYi Micro Hei&quot;, SimSun, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);\">他还表示：“河北华夏幸福对科斯塔有非常明确的兴趣，交易一旦达成，科斯塔就将成为世界上年薪最高的球员。�\�</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 10px 0px; list-style: none; word-wrap: break-word; word-break: normal; text-indent: 2em; line-height: 1.7; color: rgb(52, 52, 52); font-family: &quot;Source Sans Pro&quot;, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, &quot;WenQuanYi Micro Hei&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑, STHeiti, &quot;WenQuanYi Micro Hei&quot;, SimSun, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);\">该媒体称，中国天津权健俱乐部想要科斯塔已经在全世界都不是秘密，他们多次公开表示愿意高价引进这位西班牙前锋�\�</p><p><br/></p>') [ RunTime:0.001491s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000541s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005601s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000371s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000362s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000289s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001577s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000541s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000585s ]
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-29T12:11:50+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001738s ]
+SQL: SHOW COLUMNS FROM `fc_news_data` [ RunTime:0.001483s ]
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Lib/Action/IndexAction.class.php 第 96 行.
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.id = %d ) LIMIT 1   [ RunTime:0.001234s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.id = %d ) LIMIT 1  
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000525s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000580s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: jis /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/cbcf4388101292f27eb9b214ccec63b6.php 第 120 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010662s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000415s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000363s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000288s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001613s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000503s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-04-29T12:11:50+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=add
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

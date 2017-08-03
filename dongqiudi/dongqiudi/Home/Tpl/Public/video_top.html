@@ -1,0 +1,77 @@
+<include file="Public:header" />
+<style>
+h2{
+	font-size:1.5em;
+}
+#news_list li {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    height: 160px;
+    border-bottom: 1px solid #e6eaed;
+    color: #818b97;
+}
+#news_list a.tag_video {
+    top: 105px;
+    left: 126px;
+}
+#news_list li img {
+    float: left;
+	margin-top:-1px;
+    display: block;
+    margin-right: 25px;
+    width: 160px;
+    height: 120px;
+    line-height: 120px;
+}
+#vList dd .video {
+    bottom: 8px;
+    left: 98px;
+}
+</style>
+<div id="main" class="cf">
+        <div id="top" class="cf">
+        <div id="vShow">
+            <ul style="margin-left: -1280px;">
+				<volist name="focus_img" id="vo">
+					<li>
+						<a href="{:U('video/show',array('id'=>$vo['id']))}" target="_blank">
+							<img src="{$vo.thumb}" alt="" href="{:U('video/show',array('id'=>$vo['id']))}">
+							<h3>{$vo.title}</h3>
+						</a>
+					</li>
+				</volist>
+			</ul>
+        </div>
+        <dl id="vList">
+            <dt>重要视频</dt>
+				<volist name="focus_img" id="vo">
+					<dd class="" style="height:73px;">
+						<a href="{:U('video/show',array('id'=>$vo['id']))}" target="_blank">
+							<span class="video"></span>
+							<img src="{$vo.thumb}">
+							<p>{$vo.title}</p>
+						</a>
+					</dd>
+				</volist>
+		</dl>
+    </div>
+    <div id="con" class="cf">
+        <div class="left" id="pjax-container">
+    <div id="tab">
+		<a href="{:U('video/jijin')}" rel="11" class=" ">集锦</a>
+		<a href="{:U('video/index')}" rel="43" class=" last  sel">视频</a>
+	</div>
+	<script type="text/javascript">
+  $(document).ready(function(){
+    $("#tab a").each(function(){
+        $this = $(this);
+        if($this[0].href==String(window.location)){  
+            $("#tab a").removeClass("sel");		
+            $this.addClass("sel");  
+        }  
+    });  
+}); 
+
+
+</script>

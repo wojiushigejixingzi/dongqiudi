@@ -1,0 +1,227 @@
+<include file="Public:header" />
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加内容</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="">  
+	<input type="hidden" name="user_id" value="{$_SESSION['user_id']}">
+      <div class="form-group">
+        <div class="label">
+          <label>标题：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="{$result.title}" name="title" data-validate="required:请输入标题" />
+          <div class="tips"></div>
+        </div>
+      </div>
+	  <div class="form-group">
+        <div class="label">
+          <label>关键字标题：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" value="{$result.key_words}" name="key_words" value="" />
+        </div>
+      </div>
+	  <div class="form-group">
+        <div class="label">
+          <label>来源：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" value="{$result.copyfrom}"  name="copyfrom" value="" />
+        </div>
+      </div>
+     <!--  <div class="form-group">
+        <div class="label">
+          <label>图片：</label>
+        </div>
+        <div class="field">
+          <input type="text" id="url1" name="img" class="input tips" style="width:25%; float:left;"  value=""  data-toggle="hover" data-place="right" data-image="" />
+          <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
+          <div class="tipss">图片尺寸：500*500</div>
+        </div>
+      </div>    -->  
+      
+      <if condition="$iscid eq 1">
+        <div class="form-group">
+          <div class="label">
+            <label>分类标题：</label>
+          </div>
+          <div class="field">
+            <select name="cid" class="input w50">
+              <option value="">请选择分类</option>
+              <option value="">产品分类</option>
+              <option value="">产品分类</option>
+              <option value="">产品分类</option>
+              <option value="">产品分类</option>
+            </select>
+            <div class="tips"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="label">
+            <label>其他属性：</label>
+          </div>
+          <div class="field" style="padding-top:8px;"> 
+            首页 <input id="ishome"  type="checkbox" />
+            推荐 <input id="isvouch"  type="checkbox" />
+            置顶 <input id="istop"  type="checkbox" /> 
+         
+          </div>
+        </div>
+      </if>
+      <div class="form-group">
+        <div class="label">
+          <label>描述：</label>
+        </div>
+        <div class="field">
+          <textarea class="input" name="description" value="{$result.description}" style=" height:90px;"></textarea>
+          <div class="tips"></div>
+        </div>
+      </div>
+       <div class="form-group">
+        <div class="label">
+          <label>内容：</label>
+        </div>
+        <div class="field">
+		  <textarea name="content" value="" id="EditorId">{$result.content} </textarea>
+          <div class="tips"></div>
+        </div>
+      </div> 
+		<div class="form-group" style="margin:-22px 0px 0px 165px;">
+			<label>
+				<input name="add_introduce" value="1" checked="" type="checkbox">
+				是否截取内容
+			</label>
+			<input class="input-text" name="introcude_length" value="200" size="3" type="text">
+				字符至内容摘要
+			<label>
+				<input name="auto_thumb" value="1" checked="" type="checkbox">
+				是否获取内容第
+			</label>
+			<input class="input-text" name="auto_thumb_no" value="1" size="2" type="text">
+			张图片作为标题图片 
+		</div>
+		<div class="form-group" style="margin-left:161px;">
+			<tr>
+				<th width="80"> 推荐位	  </th>&nbsp;&nbsp;&nbsp;&nbsp;
+				<td>
+                
+                
+                <volist name='jis' id='vo'>
+                    {$vo.name}<input type="checkbox" name="syt[]" value="{$vo.id}" <?php foreach($xz as $v){if($v['jishuid']==$vo['id']){ echo "checked";}} ?>>&nbsp;&nbsp;&nbsp;
+                </volist>
+                
+                
+					<!-- <input type='hidden' name='position' value='-1'> -->
+					<label class="ib" style="width:125px">
+						<input type="checkbox" name='position' id="_1"  value="1" <if condition="1 eq $result['position']">checked="checked"</if>> 首页头条推荐
+					</label>
+					<label class="ib" style="width:125px">
+						<input type="checkbox" name='position' id="_2"  value="2" <if condition="2 eq $result['position']">checked="checked"</if>> 首页焦点图推荐
+					</label>
+					<label class="ib" style="width:125px">
+						<input type="checkbox" name='position' id="_3"  value="3" <if condition="3 eq $result['position']">checked="checked"</if>> 视频首页头条推荐
+					</label>
+					<label class="ib" style="width:125px">
+						<input type="checkbox" name='position' id="_4"  value="4" <if condition="4 eq $result['position']">checked="checked"</if>> 视频首页焦点图
+					</label>
+					<label class="ib" style="width:125px">
+						<input type="checkbox" name='position' id="_5"  value="5" <if condition="5 eq $result['position']">checked="checked"</if>> 栏目首页推荐
+					</label> 
+				</td>
+			</tr>
+		</div>
+    <!--   <div class="clear"></div>
+      <div class="form-group">
+        <div class="label">
+          <label>内容关键字：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="s_keywords" value=""/>
+        </div>
+      </div> -->
+      <!-- <div class="form-group">
+        <div class="label">
+          <label>关键字描述：</label>
+        </div>
+        <div class="field">
+          <textarea type="text" class="input" name="s_desc" style="height:80px;"></textarea>
+        </div>
+      </div> -->
+     <!--  <div class="form-group">
+        <div class="label">
+          <label>排序：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="sort" value="0"  data-validate="number:排序必须为数字" />
+          <div class="tips"></div>
+        </div>
+      </div> -->
+      <!-- <div class="form-group">
+        <div class="label">
+          <label>发布时间：</label>
+        </div>
+        <div class="field"> 
+          <script src="js/laydate/laydate.js"></script>
+          <input type="text" class="laydate-icon input w50" name="datetime" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" value=""  data-validate="required:日期不能为空" style="padding:10px!important; height:auto!important;border:1px solid #ddd!important;" />
+          <div class="tips"></div>
+        </div>
+      </div> -->
+      <!-- <div class="form-group">
+        <div class="label">
+          <label>作者：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="authour" value=""  />
+          <div class="tips"></div>
+        </div>
+      </div> -->
+      <!-- <div class="form-group">
+        <div class="label">
+          <label>点击次数：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="views" value="" data-validate="member:只能为数字"  />
+          <div class="tips"></div>
+        </div>
+      </div> -->
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="__PUBLIC__/ueditor/ueditor.config.js"></script> 
+<script src="__PUBLIC__/ueditor/ueditor.all.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+<script type="text/javascript">
+      /*    UE.getEditor('content',{    //content为要编辑的textarea的id
+
+          initialFrameWidth: 1400,   //初始化宽度
+
+          initialFrameHeight: 500,   //初始化高度
+
+  });*/
+  window.UEDITOR_HOME_URL = "__PUBLIC__/ueditor/";//配置路径设定为UEditor所放的位置
+     window.onload=function(){
+        window.UEDITOR_CONFIG.initialFrameHeight=300;//编辑器的高度
+        window.UEDITOR_CONFIG.initialFrameWidth=1400;//编辑器的宽度
+        var editor = new UE.ui.Editor({
+            imageUrl : '__APP__/Editor/uploadImage',
+            fileUrl : '__APP__/Editor/uploadFile',
+            imagePath : '',
+            filePath : '',
+            imageManagerUrl:'__APP__/Editor/imageManage', //图片在线管理的处理地址
+            imageManagerPath:'__ROOT__/'
+        });
+        editor.render("EditorId");//此处的EditorId与<textarea name="content" id="EditorId">的id值对应 </textarea>
+    }
+
+</script>
+<include file="Public:footer" />

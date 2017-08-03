@@ -1,0 +1,446 @@
+[ 2017-04-14T10:10:33+08:00 ] 171.12.11.187 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001708s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 ) ORDER BY n.id desc LIMIT 5   [ RunTime:0.002811s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.position = 1 ) ORDER BY n.id desc  [ RunTime:0.001665s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001656s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 64 ) LIMIT 1   [ RunTime:0.001362s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 61 ) LIMIT 1   [ RunTime:0.001641s ]
+NOTIC: [8] Undefined variable: num /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fc_match` [ RunTime:0.001890s ]
+SQL: SHOW COLUMNS FROM `fc_team` [ RunTime:0.001905s ]
+SQL: SELECT * FROM `fc_match` WHERE ( position = 1 or position =3 ) ORDER BY match_id desc LIMIT 5   [ RunTime:0.001478s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001398s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001324s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 3 ) LIMIT 1   [ RunTime:0.001369s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 12 ) LIMIT 1   [ RunTime:0.001436s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 5 ) LIMIT 1   [ RunTime:0.001391s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001301s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001296s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 7 ) LIMIT 1   [ RunTime:0.003081s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001691s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 11 ) LIMIT 1   [ RunTime:0.001375s ]
+SQL: SELECT * FROM `fc_team` WHERE ( league = "中超" ) ORDER BY league_integral desc , goal_difference desc LIMIT 10   [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001828s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id ORDER BY comment.fabulous desc LIMIT 5   [ RunTime:0.001771s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000461s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000510s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019077s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000464s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000356s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000324s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001753s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000479s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-04-14T10:10:33+08:00 ] 171.12.11.187 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T10:10:54+08:00 ] 171.12.11.187 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001732s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 ) ORDER BY n.id desc LIMIT 5   [ RunTime:0.002856s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.position = 1 ) ORDER BY n.id desc  [ RunTime:0.001635s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001496s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 61 ) LIMIT 1   [ RunTime:0.001249s ]
+NOTIC: [8] Undefined variable: num /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fc_match` [ RunTime:0.001591s ]
+SQL: SHOW COLUMNS FROM `fc_team` [ RunTime:0.001605s ]
+SQL: SELECT * FROM `fc_match` WHERE ( position = 1 or position =3 ) ORDER BY match_id desc LIMIT 5   [ RunTime:0.001306s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001283s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001302s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 3 ) LIMIT 1   [ RunTime:0.001356s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 12 ) LIMIT 1   [ RunTime:0.001302s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 5 ) LIMIT 1   [ RunTime:0.001292s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001317s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001278s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 7 ) LIMIT 1   [ RunTime:0.001330s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001300s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 11 ) LIMIT 1   [ RunTime:0.001340s ]
+SQL: SELECT * FROM `fc_team` WHERE ( league = "中超" ) ORDER BY league_integral desc , goal_difference desc LIMIT 10   [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001748s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id ORDER BY comment.fabulous desc LIMIT 5   [ RunTime:0.001652s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000467s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019263s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000431s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000349s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000277s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001614s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000447s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-04-14T10:10:54+08:00 ] 171.12.11.187 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T10:42:24+08:00 ] 171.12.11.187 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001594s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 ) ORDER BY n.id desc LIMIT 5   [ RunTime:0.002335s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.position = 1 ) ORDER BY n.id desc  [ RunTime:0.001470s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001439s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 65 ) LIMIT 1   [ RunTime:0.001102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 61 ) LIMIT 1   [ RunTime:0.001087s ]
+NOTIC: [8] Undefined variable: num /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fc_match` [ RunTime:0.001424s ]
+SQL: SHOW COLUMNS FROM `fc_team` [ RunTime:0.001477s ]
+SQL: SELECT * FROM `fc_match` WHERE ( position = 1 or position =3 ) ORDER BY match_id desc LIMIT 5   [ RunTime:0.001189s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001114s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001149s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 3 ) LIMIT 1   [ RunTime:0.001268s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 12 ) LIMIT 1   [ RunTime:0.001106s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 5 ) LIMIT 1   [ RunTime:0.001127s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001058s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001075s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 7 ) LIMIT 1   [ RunTime:0.001139s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001058s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 11 ) LIMIT 1   [ RunTime:0.001129s ]
+SQL: SELECT * FROM `fc_team` WHERE ( league = "中超" ) ORDER BY league_integral desc , goal_difference desc LIMIT 10   [ RunTime:0.001170s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001552s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id ORDER BY comment.fabulous desc LIMIT 5   [ RunTime:0.001486s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000455s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000502s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019006s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000471s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000390s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000308s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001682s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000477s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-04-14T10:42:24+08:00 ] 171.12.11.187 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T10:42:28+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=65
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001402s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id LEFT JOIN fc_user as u on n.user_id = u.user_id WHERE ( n.id = '65' ) AND ( d.id = '65' ) LIMIT 1   [ RunTime:0.001142s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 65 ) LIMIT 1   [ RunTime:0.000910s ]
+SQL: SELECT * FROM fc_comment n LEFT JOIN fc_user as d on n.user_id = d.user_id WHERE ( news_id = 65 ) ORDER BY n.updatetime desc LIMIT 0,7   [ RunTime:0.001090s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 467 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 65 ) LIMIT 1   [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001222s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id WHERE ( comment.fabulous >= '3' ) AND ( news.id = '65' ) ORDER BY comment.fabulous desc  [ RunTime:0.001092s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000488s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015790s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000397s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000355s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000291s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001604s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000481s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-04-14T10:42:28+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=65
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T10:42:29+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=65
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001531s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id LEFT JOIN fc_user as u on n.user_id = u.user_id WHERE ( n.id = '65' ) AND ( d.id = '65' ) LIMIT 1   [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001415s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 65 ) LIMIT 1   [ RunTime:0.001092s ]
+SQL: SELECT * FROM fc_comment n LEFT JOIN fc_user as d on n.user_id = d.user_id WHERE ( news_id = 65 ) ORDER BY n.updatetime desc LIMIT 0,7   [ RunTime:0.001117s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 467 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 65 ) LIMIT 1   [ RunTime:0.001170s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001363s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id WHERE ( comment.fabulous >= '3' ) AND ( news.id = '65' ) ORDER BY comment.fabulous desc  [ RunTime:0.001049s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000483s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000530s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015810s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000398s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000378s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000291s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001580s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000487s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-04-14T10:42:29+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=65
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T10:44:16+08:00 ] 171.12.11.187 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001663s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 ) ORDER BY n.id desc LIMIT 5   [ RunTime:0.002592s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.position = 1 ) ORDER BY n.id desc  [ RunTime:0.001382s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001419s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 66 ) LIMIT 1   [ RunTime:0.001223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 61 ) LIMIT 1   [ RunTime:0.001149s ]
+NOTIC: [8] Undefined variable: num /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fc_match` [ RunTime:0.001665s ]
+SQL: SHOW COLUMNS FROM `fc_team` [ RunTime:0.001578s ]
+SQL: SELECT * FROM `fc_match` WHERE ( position = 1 or position =3 ) ORDER BY match_id desc LIMIT 5   [ RunTime:0.001202s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001169s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001203s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 3 ) LIMIT 1   [ RunTime:0.001202s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 12 ) LIMIT 1   [ RunTime:0.001188s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 5 ) LIMIT 1   [ RunTime:0.001168s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001193s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001189s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 7 ) LIMIT 1   [ RunTime:0.001174s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001209s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 11 ) LIMIT 1   [ RunTime:0.001239s ]
+SQL: SELECT * FROM `fc_team` WHERE ( league = "中超" ) ORDER BY league_integral desc , goal_difference desc LIMIT 10   [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001425s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id ORDER BY comment.fabulous desc LIMIT 5   [ RunTime:0.001593s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000439s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000486s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019317s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000424s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000346s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000297s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001581s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000471s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-04-14T10:44:16+08:00 ] 171.12.11.187 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T10:44:19+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=66
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001486s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id LEFT JOIN fc_user as u on n.user_id = u.user_id WHERE ( n.id = '66' ) AND ( d.id = '66' ) LIMIT 1   [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 66 ) LIMIT 1   [ RunTime:0.000912s ]
+SQL: SELECT * FROM fc_comment n LEFT JOIN fc_user as d on n.user_id = d.user_id WHERE ( news_id = 66 ) ORDER BY n.updatetime desc LIMIT 0,7   [ RunTime:0.001092s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 467 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 66 ) LIMIT 1   [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001217s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id WHERE ( comment.fabulous >= '3' ) AND ( news.id = '66' ) ORDER BY comment.fabulous desc  [ RunTime:0.001115s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000482s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015849s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000395s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000352s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000285s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001564s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000510s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-04-14T10:44:19+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=66
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T10:44:44+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001751s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 ) ORDER BY n.id desc LIMIT 5   [ RunTime:0.002826s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.position = 1 ) ORDER BY n.id desc  [ RunTime:0.001589s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001532s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 66 ) LIMIT 1   [ RunTime:0.001258s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 61 ) LIMIT 1   [ RunTime:0.001283s ]
+NOTIC: [8] Undefined variable: num /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fc_match` [ RunTime:0.001612s ]
+SQL: SHOW COLUMNS FROM `fc_team` [ RunTime:0.001694s ]
+SQL: SELECT * FROM `fc_match` WHERE ( position = 1 or position =3 ) ORDER BY match_id desc LIMIT 5   [ RunTime:0.001319s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001299s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001286s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 3 ) LIMIT 1   [ RunTime:0.001275s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 12 ) LIMIT 1   [ RunTime:0.001303s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 5 ) LIMIT 1   [ RunTime:0.001296s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001302s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001781s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 7 ) LIMIT 1   [ RunTime:0.001356s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001316s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 11 ) LIMIT 1   [ RunTime:0.001404s ]
+SQL: SELECT * FROM `fc_team` WHERE ( league = "中超" ) ORDER BY league_integral desc , goal_difference desc LIMIT 10   [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001551s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id ORDER BY comment.fabulous desc LIMIT 5   [ RunTime:0.001314s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000472s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000523s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.023724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023789s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000458s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000387s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000289s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001654s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000485s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-04-14T10:44:44+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=index
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T10:44:47+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=61
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001629s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id LEFT JOIN fc_user as u on n.user_id = u.user_id WHERE ( n.id = '61' ) AND ( d.id = '61' ) LIMIT 1   [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001327s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 61 ) LIMIT 1   [ RunTime:0.001842s ]
+SQL: SELECT * FROM fc_comment n LEFT JOIN fc_user as d on n.user_id = d.user_id WHERE ( news_id = 61 ) ORDER BY n.updatetime desc LIMIT 0,7   [ RunTime:0.001353s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 467 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 61 ) LIMIT 1   [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001400s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id WHERE ( comment.fabulous >= '3' ) AND ( news.id = '61' ) ORDER BY comment.fabulous desc  [ RunTime:0.001296s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000458s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000506s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015761s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000433s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000404s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000302s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001656s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000489s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-04-14T10:44:47+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=61
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T21:28:53+08:00 ] 171.12.11.187 /dongqiudi/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001376s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( position = 2 ) ORDER BY n.id desc LIMIT 5   [ RunTime:0.002471s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.position = 1 ) ORDER BY n.id desc  [ RunTime:0.001421s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001354s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 66 ) LIMIT 1   [ RunTime:0.001010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 61 ) LIMIT 1   [ RunTime:0.000969s ]
+NOTIC: [8] Undefined variable: num /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fc_match` [ RunTime:0.001378s ]
+SQL: SHOW COLUMNS FROM `fc_team` [ RunTime:0.001373s ]
+SQL: SELECT * FROM `fc_match` WHERE ( position = 1 or position =3 ) ORDER BY match_id desc LIMIT 5   [ RunTime:0.001142s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001054s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001147s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 3 ) LIMIT 1   [ RunTime:0.001018s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 12 ) LIMIT 1   [ RunTime:0.001007s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 5 ) LIMIT 1   [ RunTime:0.001018s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.000950s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.000937s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 7 ) LIMIT 1   [ RunTime:0.001038s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.000943s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 11 ) LIMIT 1   [ RunTime:0.001037s ]
+SQL: SELECT * FROM `fc_team` WHERE ( league = "中超" ) ORDER BY league_integral desc , goal_difference desc LIMIT 10   [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001198s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id ORDER BY comment.fabulous desc LIMIT 5   [ RunTime:0.001146s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000444s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000493s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019565s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000424s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000369s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000322s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001651s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000449s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-04-14T21:28:53+08:00 ] 171.12.11.187 /dongqiudi/
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-14T21:29:07+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=67
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 549 行.
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001592s ]
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id LEFT JOIN fc_user as u on n.user_id = u.user_id WHERE ( n.id = '67' ) AND ( d.id = '67' ) LIMIT 1   [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `fc_comment` [ RunTime:0.001270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 67 ) LIMIT 1   [ RunTime:0.001162s ]
+SQL: SELECT * FROM fc_comment n LEFT JOIN fc_user as d on n.user_id = d.user_id WHERE ( news_id = 67 ) ORDER BY n.updatetime desc LIMIT 0,7   [ RunTime:0.001189s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/IndexAction.class.php 第 467 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_comment` WHERE ( news_id = 67 ) LIMIT 1   [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001317s ]
+SQL: SELECT comment.comment_id AS comment_id,comment.news_id AS news_id,comment.content AS content,comment.fabulous AS fabulous,comment.parent_id AS parent_id,comment.user_id AS user_id,comment.updatetime AS updatetime,user.user_id AS username_id,user.username AS username,user.headimg AS headimg,news.id AS id,news.title AS title FROM fc_comment comment LEFT JOIN fc_user user ON comment.user_id=user.user_id  JOIN fc_news news ON comment.news_id=news.id WHERE ( comment.fabulous >= '3' ) AND ( news.id = '67' ) ORDER BY comment.fabulous desc  [ RunTime:0.001239s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000857s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000915s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019343s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000405s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000357s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000305s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001585s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000476s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2017-04-14T21:29:07+08:00 ] 171.12.11.187 /dongqiudi/index.php?m=index&a=show&id=67
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

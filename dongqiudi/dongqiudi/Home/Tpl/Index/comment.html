@@ -1,0 +1,50 @@
+<div class="comFrame" style="position: relative">
+    <div id="comment_anchor" style="position:absolute; top:-55px; z-index:0;"></div>
+    <h3 id="count">全部评论（{$count}）</h3>
+    <ol id="all_comment">
+        <volist name="commlist" id="comment">
+            <li>
+                <img src="{$comment.headimg}" class="head" alt="">
+                <p class="nameCon">
+                    <span class="name">{$comment.username}</span>
+                    <span class="time">{$comment.updatetime|date='Y-m-d H:i:s',###}</span>
+                </p>
+                <p class="comCon">{$comment.content}</p>
+                <div class="image-view text-center"></div>
+                <p></p>
+
+                        <volist name = "comment['son']" id="vo">
+                        <div class="recomm">
+                            <p>
+                                <span class="name">{$vo.username}</span>
+                                <span class="time">{$vo.updatetime|date='Y-m-d H:i:s',###}</span>
+                            </p>
+                            <p>{$vo.content}</p>
+                            <div class="ctr" rel="{$vo.comment_id}" id="com_{$vo.comment_id}" res="{$vo.username}">
+                                <a href="javascript:void(0);" onclick="up({$vo.comment_id})" class="zan" name="up_{$vo.comment_id}">赞（{$vo.fabulous}）</a>
+                            </div>
+                        </div>
+
+                        </volist>
+
+                <div class="ctr" rel="{$comment.comment_id}" id="com_{$comment.comment_id}" res="{$comment.username}">
+                    <a href="javascript:void(0);" class="report">举报</a>
+                    <a href="javascript:void(0);" class="recom">回复</a>
+                    <a href="javascript:void(0);" onclick="up({$comment.comment_id})" class="zan" name="up_{$comment.comment_id}">赞（{$comment.fabulous}）</a>
+                </div>
+            </li>
+        </volist>
+    </ol>
+</div>
+{$page}
+<script>
+    /* function index(id){
+         alert('111');
+         var id = id;
+         //把数据传递到要替换的控制器方法中 url = "{:U('Index/comment','parent_id')}" + to_user_id;
+         $.get("{:U('Index/show','p')}"+id, function(data){
+             //用get方法发送信息到index中的myinfo方法
+             $("#pjax-container").replaceWith(data.content);
+         });
+     }*/
+</script>

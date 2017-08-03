@@ -1,0 +1,202 @@
+<include file="Public:header" />
+<link href="__PUBLIC__/css/geren.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+<style>
+	#touxiang{
+		margin:0 auto;
+	}
+</style>
+</head>
+<body>
+	<div class="mainContent" style="margin-top:90px; min-height:%60;">
+		<aside>
+			<div class="avatar" style="background: url({$result.headimg}) no-repeat; background-size: 160px 160px">
+				<a href="#"><span>{$result.username}</span></a>
+			</div>
+			<button type="button" style="margin-left:78px;" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">个人设置</button>
+			
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="margin-top:90px;">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">个人信息</h4>
+						</div>
+						
+						<form class="form-horizontal" action="" method="POST" enctype="multipart/form-data">
+							<div class="modal-body">
+									<div class="form-group" id="touxiang" style="margin-bottom:3%;">
+											<label for="inputPassword3" class="col-sm-2 control-label">头像：</label>
+										<div class="field">
+											<div id="preview">
+												<if condition="empty($_SESSION['headimg'])">
+													<img id="imghead" border="0" src="__PUBLIC__/image/photo_icon.png" width="90" height="90" onclick="$('#previewImg').click();">
+												<else/>
+													<img id="imghead" border="0" src="{$result.headimg}" width="90" height="90" onclick="$('#previewImg').click();">
+												</if>
+											</div>         
+											<input type="file" name="headimg" onchange="previewImage(this)" style="display: none;" id="previewImg">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-2 control-label">账号</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="inputEmail3" name="account" value="{$result.account}" readonly="readonly" placeholder="账号">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">用户名</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="inputPassword3" name="username" value="{$result.username}" placeholder="用户名">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">手机号</label>
+										<div class="col-sm-10">
+											<input type="tel" class="form-control" id="inputPassword3" name="phone_number" value="{$result.phone_number}" placeholder="手机号">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">邮箱</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="inputPassword3" name="email" value="{$result.email}" placeholder="邮箱">
+										</div>
+									</div>
+								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+								<button type="submit" class="btn btn-primary">保存</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<div class="blogitem" style="padding-left:3px;">
+			<div>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">发出的评论</a></li>
+					<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">收到的评论</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" style="padding-left:3px;" id="home">
+						<div id="hot_list" style="padding-top:3px;" class="conFrame">
+							<dl>
+							<if condition="empty($comment_data)">
+							您暂无评论哦！
+							<else/>
+								<volist name="comment_data" id="vo">
+									<dt class="cf">
+										<img src="{$vo.headimg}" alt="">
+										<h4 style="font-weight:bold;color: #000000; font-size:12px;">{$vo.username}</h4>
+									</dt>
+									<dd>
+										<span>{$vo.content}</span>
+										<p>评论于 <a href="{:U('index/show',array('id'=>$vo['news_id']))}" target="_blank">{$vo.title}</a></p>
+										<span class="time">{$vo.updatetime|date='Y-m-d H:i:s',###}</span>
+									</dd>
+								</volist>
+							</if>
+							</dl>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="profile" style="padding-left:3px;">
+						<div id="hot_list" style="padding-top:3px;" class="conFrame">
+							<dl>
+							<if condition="empty($comment_replay_array)">
+							暂无收到对您的评论哦！
+							<else/>
+								<volist name="comment_replay_array" id="vo">
+									<dt class="cf">
+										<img src="{$vo.parent.headimg}" alt="">
+										<h4 style="font-weight:bold;color: #000000; font-size:12px;">{$vo.parent.username}</h4>
+									</dt>
+									<dd>
+										<span>{$vo.parent.content}</span>
+										<p>回复我的评论： <a href="{:U('index/show',array('id'=>$vo['parent']['news_id']))}" target="_blank">{$vo.content}</a></p>
+										<span class="time">{$vo.updatetime|date='Y-m-d H:i:s',###}</span>
+									</dd>
+								</volist>
+							</if>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="pages" style="padding-top:10px;">
+				<span>1</span>
+				<a href="#" hidefocus="">2</a>
+				<a href="#" hidefocus="">3</a>
+				<a href="#" class="next">下一页&gt;&gt;</a>
+			</div> -->
+		</div>
+	</div>
+</body>
+<script>
+<!-- $('#myTabs a').click(function (e) { -->
+  <!-- e.preventDefault() -->
+  <!-- $(this).tab('show') -->
+<!-- }) -->
+</script>
+
+<script>
+      //图片上传预览    IE是用了滤镜。
+        function previewImage(file)
+        {
+          var MAXWIDTH  = 90; 
+          var MAXHEIGHT = 90;
+          var div = document.getElementById('preview');
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img id=imghead onclick=$("#previewImg").click()>';
+              var img = document.getElementById('imghead');
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+</script>
+<include file="Public:footer" />

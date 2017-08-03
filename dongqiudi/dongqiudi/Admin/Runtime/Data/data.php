@@ -1,0 +1,1 @@
+<?php	return array ( 0 => array ( 'hometeam_score' => '6', 'vsitingteam_score' => '1', 'match_id' => '54', 'hometeam_id' => '3', 'vsitingteam_id' => '7', 'level' => '中超', 'start_time' => '1488634500', ), );?>

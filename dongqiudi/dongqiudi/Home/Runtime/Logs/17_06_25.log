@@ -1,0 +1,27 @@
+[ 2017-06-25T20:50:55+08:00 ] 123.125.71.102 /dongqiudi/index.php?a=dejia&m=data
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.007725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007843s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.009732s ]
+INFO: [ view_template ] --END-- [ RunTime:0.009792s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: type /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/c72b6426e5e9567dc7612936c720507f.php 第 120 行.
+NOTIC: [8] Undefined index: type /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/c72b6426e5e9567dc7612936c720507f.php 第 123 行.
+NOTIC: [8] Undefined index: type /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/c72b6426e5e9567dc7612936c720507f.php 第 127 行.
+NOTIC: [8] Undefined variable: zhongchao /data/home/bxu2442590746/htdocs/dongqiudi/Home/Runtime/Cache/c72b6426e5e9567dc7612936c720507f.php 第 208 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.198427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.198486s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000408s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000367s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000332s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001636s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000537s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-06-25T20:50:55+08:00 ] 123.125.71.102 /dongqiudi/index.php?a=dejia&m=data
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

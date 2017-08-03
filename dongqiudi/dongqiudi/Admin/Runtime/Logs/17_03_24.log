@@ -1,0 +1,76 @@
+[ 2017-03-24T10:26:15+08:00 ] 171.12.11.187 /dongqiudi/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000416s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007377s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000366s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000326s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000271s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001489s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000515s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-03-24T10:26:15+08:00 ] 171.12.11.187 /dongqiudi/admin.php
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-03-24T10:26:15+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=info
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000456s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000506s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007028s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000362s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000357s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000274s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001536s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000544s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-03-24T10:26:15+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=info
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-03-24T10:26:18+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `fc_news` [ RunTime:0.001474s ]
+SQL: SHOW COLUMNS FROM `fc_news_data` [ RunTime:0.001259s ]
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Lib/Action/IndexAction.class.php 第 79 行.
+SQL: SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.id = %d ) LIMIT 1   [ RunTime:0.001041s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM fc_news n LEFT JOIN fc_news_data as d on n.id = d.id WHERE ( n.id = %d ) LIMIT 1  
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000461s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000517s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: jis /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/cbcf4388101292f27eb9b214ccec63b6.php 第 104 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010400s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000362s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000353s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000261s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001845s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000483s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-03-24T10:26:18+08:00 ] 171.12.11.187 /dongqiudi/admin.php?m=index&a=add
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

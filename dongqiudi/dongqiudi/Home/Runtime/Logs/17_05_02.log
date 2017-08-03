@@ -1,0 +1,28 @@
+[ 2017-05-02T09:36:06+08:00 ] 123.125.71.72 /dongqiudi/index.php?a=dejia&m=march
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `fc_match` [ RunTime:0.001936s ]
+SQL: SHOW COLUMNS FROM `fc_team` [ RunTime:0.001764s ]
+SQL: SELECT * FROM `fc_match` WHERE ( level = "德甲" ) ORDER BY start_time asc  [ RunTime:0.001424s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/MarchAction.class.php 第 110 行.
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/bxu2442590746/htdocs/dongqiudi/Home/Lib/Action/MarchAction.class.php 第 116 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.006418s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006468s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.083869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083920s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000402s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000320s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000268s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001495s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000420s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-05-02T09:36:06+08:00 ] 123.125.71.72 /dongqiudi/index.php?a=dejia&m=march
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

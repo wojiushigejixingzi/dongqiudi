@@ -1,0 +1,45 @@
+<include file="Public:header" />
+<include file="Public:index_top" />
+	<div id="news_list">
+		<ol id="JJ">
+			<volist name="shendu" id="vo">
+				<li>
+					<h2>
+						<a href="{:U('index/show',array('id'=>$vo['id']))}" style="font-size:23px;font-size:20px;" target="_blank">
+						<img src="{$vo.thumb}" alt="{$vo.title}">{$vo.title}</a>
+					</h2>
+					<div class="info" style="margin-top:-46px;">
+						<p>{$vo.description}</p>
+						<span class="time">{$vo.inputtime|date='Y-m-d H:i:s',###}</span>
+						<a class="comment" href="{:U('index/show',array('id'=>$vo['id']))}" target="_blank">{$vo.num}</a>
+					</div>
+				</li>
+			</volist>
+		</ol>
+	</div>
+			<ul class="pagination">
+				<li class="disabled"><span>«</span></li> 
+				<li class="active"><span>1</span></li>
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=2">2</a></li>
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=3">3</a></li>
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=4">4</a></li>
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=5">5</a></li>
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=6">6</a></li>
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=7">7</a></li>
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=8">8</a></li>
+				<li class="disabled"><span>...</span></li>
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=6290">6290</a></li>
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=6291">6291</a></li> 
+				<li><a href="https://www.dongqiudi.com/?tab=1&amp;page=2" rel="next">»</a></li>
+			</ul>
+		</div>
+		<style>
+			#infscr-loading {
+				text-align:center;
+				margin: 10px;
+			}
+		</style>
+	
+       
+<include file="Public:index_bottom" />
+<include file="Public:footer" />

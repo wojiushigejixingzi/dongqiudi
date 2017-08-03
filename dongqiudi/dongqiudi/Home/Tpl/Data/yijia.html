@@ -1,0 +1,192 @@
+<include file="Public:data_left" />
+<div id="stat_detail">
+            <div id="stat_tab">
+			<if condition="$_GET['type'] eq ''">
+                <a href="{:U('data/yijia')}" class="sel">积分榜</a>
+			<else/>
+                <a href="{:U('data/yijia')}" >积分榜</a>
+			</if>	
+			<if condition="$_GET['type'] eq 'schedule'">
+				<a href="{:U('data/yijia',array('type'=>'schedule'))}" id="schdule" class="sel">赛程表</a>
+			<else/>
+				<a href="{:U('data/yijia',array('type'=>'schedule'))}" id="schdule">赛程表</a>
+            </if>
+            </div>
+			<if condition="$_GET['type'] eq 'schedule'">
+			<table class="list_2" id="schedule">
+				<thead>
+					<tr>
+						<th class="prev" width="30%">
+							<a style="color: #fff;" href="http://www.dongqiudi.com/data?type=schedule&amp;competition=51&amp;round=39713&amp;gameweek=1">&lt; 上一轮</a>
+						</th>
+						<th colspan="2" id="schedule_title" width="40%">常规赛第2轮</th>
+						<th class="next" width="30%">
+							<a style="color: #fff;" href="http://www.dongqiudi.com/data?type=schedule&amp;competition=51&amp;round=39713&amp;gameweek=3">下一轮 &gt;</a>
+						</th>
+					</tr>
+				</thead>
+				<tbody id="schduleContent">
+					<tr>
+						<td class="time" utc="1489145700">2017-03-10 19:35</td>
+						<td class="away"><img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/441.png" alt="">江苏苏宁易购</td>
+						<td class="status">VS</td>
+						<td class="home">天津亿利<img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/431.png" alt=""></td>
+					</tr>
+						<tr>
+							<td class="time" utc="1489145700">2017-03-10 19:35</td>
+							<td class="away"><img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/10655.png" alt="">上海上港</td>
+							<td class="status">VS</td>
+							<td class="home">延边富德<img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/3826.png" alt=""></td>
+						</tr>
+						<tr>
+							<td class="time" utc="1489217400">2017-03-11 15:30</td>
+							<td class="away"><img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/18584.png" alt="">贵州恒丰智诚</td>
+							<td class="status">VS</td>
+							<td class="home">北京中赫国安<img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/429.png" alt=""></td>
+						</tr>
+						<tr>
+							<td class="time" utc="1489217400">2017-03-11 15:30</td>
+							<td class="away"><img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/432.png" alt="">重庆当代力帆</td>
+							<td class="status">VS</td>
+							<td class="home">河北华夏幸福<img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/21563.png" alt=""></td>
+						</tr>
+						<tr>
+							<td class="time" utc="1489232100">2017-03-11 19:35</td>
+							<td class="away"><img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/433.png" alt="">上海绿地申花</td>
+							<td class="status">VS</td>
+							<td class="home">天津权健<img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/18583.png" alt=""></td>
+						</tr>
+						<tr>
+							<td class="time" utc="1489232100">2017-03-11 19:35</td>
+							<td class="away"><img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/434.png" alt="">山东鲁能泰山</td>
+							<td class="status">VS</td>
+							<td class="home">广州恒大淘宝<img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/6648.png" alt=""></td>
+						</tr>
+						<tr>
+							<td class="time" utc="1489303800">2017-03-12 15:30</td>
+							<td class="away"><img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/425.png" alt="">广州富力</td>
+							<td class="status">VS</td>
+							<td class="home">长春亚泰<img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/437.png" alt=""></td>
+						</tr>
+						<tr>		
+							<td class="time" utc="1489318500">2017-03-12 19:35</td>
+							<td class="away"><img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/442.png" alt="">河南建业</td>
+							<td class="status">VS</td>
+							<td class="home">辽宁沈阳开新<img onerror="this.src=&#39;http://static1.dongqiudi.com/web-new/web/images/defaultTeam.png&#39;" src="./中超积分射手榜 — 数据_懂球帝_files/3139.png" alt=""></td>
+						</tr>
+				</tbody>
+			</table>
+			<else/>
+			<table class="list_1">
+				<tbody>
+					<tr>
+						<th colspan="10" style="text-align: center;" class="top_2">常规赛积分榜</th>
+					</tr>
+					<tr>
+						<th>排名</th>
+						<th class="team">球队</th>
+						<th>场次</th>
+						<th>胜</th>
+						<th>平</th>
+						<th>负</th>
+						<th>进球</th>
+						<th>失球</th>
+						<th>净胜球</th>
+						<th>积分</th>
+					</tr>
+					<volist name="zhongchao" id="vo">
+						<if condition="$key elt 2">
+							<tr class="top_rank">
+						<elseif condition="$key egt 14"/>
+							<tr class="bottom_rank">
+						<else/>
+							<tr>
+						</if>
+								<td>{$key + 1}</td>
+								<td class="team"><img src="{$vo.icon}" alt="">{$vo.name}</td>
+								<td>{$vo.matches}</td>
+								<td>{$vo.league_win}</td>
+								<td>{$vo.league_equal}</td>
+								<td>{$vo.league_fail}</td>
+								<td>{$vo.league_goal}</td>
+								<td>{$vo.league_fumble}</td>
+								<td>{$vo.goal_difference}</td>
+								<td>{$vo.league_integral}</td>
+								<!-- <td>{$vo.league_equal}</td> -->
+							</tr>
+					</volist>
+				</tbody>
+			</table>
+			</if>
+		<div class="loading"><span class="load"></span> 正在加载... </div>
+</div>
+<script>
+    $(function(){
+        setLocalTime();
+
+        $('.list').delegate('span.more','mouseenter',function(){
+            $(this).closest('td').find('.more_list').show();
+        });
+        $('.list').delegate('td.link','mouseleave',function(){
+            $(this).find('.more_list').hide();
+        });
+        var comp = getUrlParam('competition');
+        $('#stat_list a').each(function(){
+            if($(this).attr('rel') === comp ){
+                $(this).addClass('sel')
+            }
+        });
+        $('#other_list').click(function () {
+            if ($('#stat_list .other').is(':visible')) {
+                $('#stat_list .other').hide();
+                $('#other_list span').html("展开");
+                $('#other_list img').attr('src',"/web/images/data_spread.png");
+            } else {
+                $('#stat_list .other').toggle(true);
+                $('#other_list span').html("收起");
+                $('#other_list img').attr('src',"/web/images/data_retract.png");
+            }
+        });
+    });
+
+    function setLocalTime() {
+        date = new Date();
+        $("td.time").each(function () {
+            var str = $(this).attr('utc');
+            if (str != 0) {
+                date.setTime(str * 1000);
+                display = date.format('yyyy-MM-dd hh:mm');
+                $(this).text(display);
+            }
+        });
+    }
+
+
+    Date.prototype.format = function (format) {
+        var o = {
+            "M+": this.getMonth() + 1, //month
+            "d+": this.getDate(), //day
+            "h+": this.getHours(), //hour
+            "m+": this.getMinutes(), //minute
+            "s+": this.getSeconds(), //second
+            "q+": Math.floor((this.getMonth() + 3) / 3), //quarter
+            "S": this.getMilliseconds() //millisecond
+        }
+        if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+                (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)if (new RegExp("(" + k + ")").test(format))
+            format = format.replace(RegExp.$1,
+                    RegExp.$1.length == 1 ? o[k] :
+                            ("00" + o[k]).substr(("" + o[k]).length));
+        return format;
+    };
+
+</script>
+
+</div>
+
+
+
+
+
+<include file="Public:footer" />

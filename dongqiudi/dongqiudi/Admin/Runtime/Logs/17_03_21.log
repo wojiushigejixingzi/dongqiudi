@@ -1,0 +1,170 @@
+[ 2017-03-21T22:05:51+08:00 ] 183.204.255.93 /dongqiudi/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000437s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000489s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.020870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020942s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000442s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000372s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000287s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001844s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000592s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2017-03-21T22:05:51+08:00 ] 183.204.255.93 /dongqiudi/admin.php
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-03-21T22:05:52+08:00 ] 183.204.255.93 /dongqiudi/admin.php?m=index&a=info
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000502s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000552s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007128s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000377s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000346s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000282s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001563s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000492s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-03-21T22:05:52+08:00 ] 183.204.255.93 /dongqiudi/admin.php?m=index&a=info
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-03-21T22:05:55+08:00 ] 183.204.255.93 /dongqiudi/admin.php?m=index&a=match_manage
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `fc_match` [ RunTime:0.001747s ]
+SQL: SHOW COLUMNS FROM `fc_team` [ RunTime:0.001591s ]
+NOTIC: [8] Undefined index: keywords /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Lib/Action/IndexAction.class.php 第 415 行.
+SQL: SELECT * FROM `fc_match` ORDER BY match_id desc LIMIT 0,15   [ RunTime:0.001408s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 5  ) LIMIT 1   [ RunTime:0.001232s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 13 ) LIMIT 1   [ RunTime:0.001234s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 15  ) LIMIT 1   [ RunTime:0.001194s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 7 ) LIMIT 1   [ RunTime:0.001224s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 6  ) LIMIT 1   [ RunTime:0.001231s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 12 ) LIMIT 1   [ RunTime:0.001201s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 11  ) LIMIT 1   [ RunTime:0.001276s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 4 ) LIMIT 1   [ RunTime:0.001224s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 2  ) LIMIT 1   [ RunTime:0.001216s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 3 ) LIMIT 1   [ RunTime:0.001219s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 14  ) LIMIT 1   [ RunTime:0.001323s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1 ) LIMIT 1   [ RunTime:0.001210s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 10  ) LIMIT 1   [ RunTime:0.001241s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 9 ) LIMIT 1   [ RunTime:0.001221s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 16  ) LIMIT 1   [ RunTime:0.001214s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 8 ) LIMIT 1   [ RunTime:0.001215s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 1  ) LIMIT 1   [ RunTime:0.001375s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 11 ) LIMIT 1   [ RunTime:0.001258s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 8  ) LIMIT 1   [ RunTime:0.001226s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 6 ) LIMIT 1   [ RunTime:0.001211s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 13  ) LIMIT 1   [ RunTime:0.001217s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 14 ) LIMIT 1   [ RunTime:0.001228s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 7  ) LIMIT 1   [ RunTime:0.001227s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 10 ) LIMIT 1   [ RunTime:0.001303s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 9  ) LIMIT 1   [ RunTime:0.001464s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 5 ) LIMIT 1   [ RunTime:0.001270s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 12  ) LIMIT 1   [ RunTime:0.001296s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 2 ) LIMIT 1   [ RunTime:0.001242s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 3  ) LIMIT 1   [ RunTime:0.001230s ]
+SQL: SELECT * FROM `fc_team` WHERE ( team_id = 16 ) LIMIT 1   [ RunTime:0.001205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fc_match` LIMIT 1   [ RunTime:0.001527s ]
+NOTIC: [8] Undefined index: match_id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Lib/Action/IndexAction.class.php 第 434 行.
+NOTIC: [8] Undefined index: match_id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Lib/Action/IndexAction.class.php 第 452 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000460s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000513s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: classification /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 39 行.
+NOTIC: [8] Undefined index: classification /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 40 行.
+NOTIC: [8] Undefined index: keywords /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 46 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 97 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 98 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 97 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 98 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 97 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 98 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 97 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 98 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 97 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 98 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 97 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 98 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 97 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 98 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 97 行.
+NOTIC: [8] Undefined variable: live /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 98 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+NOTIC: [8] Use of undefined constant league_round - assumed 'league_round' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 71 行.
+NOTIC: [8] Use of undefined constant 直播中 - assumed '直播中' /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 79 行.
+NOTIC: [8] Undefined index: id /data/home/bxu2442590746/htdocs/dongqiudi/Admin/Runtime/Cache/07c84b38c5813f225311e844865d4a22.php 第 95 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.014085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014152s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000427s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000393s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000285s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001716s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000511s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-03-21T22:05:55+08:00 ] 183.204.255.93 /dongqiudi/admin.php?m=index&a=match_manage
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

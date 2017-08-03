@@ -1,0 +1,135 @@
+<include file="Public:video_top" />
+    <div id="news_list">
+		<ol>
+			<volist name="shipin" id="vo">
+				<li>
+					<a href="{:U('video/show',array('id'=>$vo['id']))}" target="_blank" class="tag_video"></a>
+					<a href="{:U('video/show',array('id'=>$vo['id']))}" target="_blank">
+						<img src="{$vo.thumb}" alt="{$vo.title}">
+					</a>
+					<h2>
+						<a href="{:U('video/show',array('id'=>$vo['id']))}" target="_blank">{$vo.title}</a>
+					</h2>
+					<p></p>
+					<div class="info">
+						<span class="time">{$vo.inputtime|date='Y-m-d H:i:s',###}</span>
+						<a class="comment" href="{:U('video/show',array('id'=>$vo['id']))}" target="_blank">{$vo.num}</a>
+					</div>
+				</li>
+			</volist>
+		</ol>
+		<div class="loading"><span class="load"></span> 正在加载... </div>
+	</div>
+	<ul class="pagination">
+		<li class="disabled"><span>«</span></li> 
+		<li class="active"><span>1</span></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=2">2</a></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=3">3</a></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=4">4</a></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=5">5</a></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=6">6</a></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=7">7</a></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=8">8</a></li>
+		<li class="disabled"><span>...</span></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=171">171</a></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=172">172</a></li>
+		<li><a href="http://www.dongqiudi.com/video?tab=11&amp;page=2" rel="next">»</a></li>
+	</ul>
+</div>
+
+<style>
+    #infscr-loading {
+        text-align:center;
+        margin: 10px;
+    }
+</style>
+        <div class="right">
+
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jsrender.min.js"></script>/
+<script type="text/javascript" src="__PUBLIC__/js/jquery.pjax.js"></script>/
+<script type="text/javascript" src="__PUBLIC__/js/main.js"></script>//
+ <script id="archiveTemplate" type="text/x-jsrender">
+        <li>
+            <a href="/article/{{:id}}" target="_blank" class="tag_video"></a>
+            <a href="/article/{{:id}}" target="_blank">
+                <img src="{{:thumb}}" alt="{{:title}}">
+            </a>
+            <h2>
+                <a href="/article/{{:id}}" target="_blank">{{:title }}</a>
+            </h2>
+            <p>{{:description}}</p>
+            <div class="info">
+                <span class="time">{{:display_time}}</span>
+                <a class="comment" href="#">{{:comments_total}}</a>
+            </div>
+        </li>
+    </script>
+    <script>
+        $(document).pjax('#tab a', '#pjax-container', {scrollTo: false});
+
+        var scroll_locked = false;
+        var scroll_times = 1;
+        $(function () {
+            $(document).scroll(function () {
+                window.setTimeout(function () {
+                    if (scroll_times < 3 && !scroll_locked) {
+                        var allHeight = document.body.scrollHeight;
+                        var sHeight = document.documentElement.scrollTop || document.body.scrollTop;
+                        var winHeight = document.documentElement.clientHeight;
+                        var margin = allHeight - sHeight - winHeight;
+
+                        if (margin < 100) {
+                            scroll_locked = true;
+                            var page = 1;
+                            var tab = 43;
+                            if (request('page')) {
+                                page = parseInt(request('page'));
+                            }
+                            if (request('tab')) {
+                                tab = request('tab');
+                            }
+                            page = page + scroll_times;
+                            scroll_times = scroll_times + 1;
+                            loadPage(tab, page);
+
+                        }
+                    }
+                }, 100)
+            });
+        });
+
+        function loadPage(id, page) {
+            $('.loading').css({visibility: 'visible'});
+            $.getJSON('/archives/' + id + '?page=' + page, function (data) {
+                $.views.converters("time", function (val) {
+                    return val.substr(5, 11);
+                });
+                var html = $("#archiveTemplate").render(data.data);
+                if (data.current_page == 1) {
+                    $('#news_list ol').empty();
+                }
+                $(html).appendTo('#news_list ol');
+                $('.pagination').replaceWith(data.render);
+
+                $('.loading').css({visibility: 'hidden'});
+                scroll_locked = false;
+                if (scroll_times === 3) {
+                    $('.pagination').css('visibility', 'visible')
+                }
+            });
+        }
+    </script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?662abe3e1ab2558f09503989c9076934";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<include file="Public:footer" />

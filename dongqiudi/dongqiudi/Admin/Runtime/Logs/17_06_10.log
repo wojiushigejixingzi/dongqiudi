@@ -1,0 +1,21 @@
+[ 2017-06-10T03:40:02+08:00 ] 69.58.178.58 /dongqiudi/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.009490s ]
+INFO: [ view_template ] --END-- [ RunTime:0.009556s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017640s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000366s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000381s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000331s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001624s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000531s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000576s ]
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

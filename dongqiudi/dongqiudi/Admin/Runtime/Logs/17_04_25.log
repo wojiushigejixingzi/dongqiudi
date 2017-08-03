@@ -1,0 +1,45 @@
+[ 2017-04-25T22:10:18+08:00 ] 167.114.65.240 /dongqiudi/admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000570s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.074698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074795s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000422s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000383s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000314s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001707s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000538s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+
+[ 2017-04-25T22:10:23+08:00 ] 167.114.65.240 /dongqiudi/admin.php?m=user&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `fc_user` [ RunTime:0.001580s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000482s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000536s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.070395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070467s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000377s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000370s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000291s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001623s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000539s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2017-04-25T22:10:23+08:00 ] 167.114.65.240 /dongqiudi/admin.php?m=user&a=login
+NOTIC: [8192] Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater Unknown 第 0 行.
+

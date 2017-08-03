@@ -1,0 +1,208 @@
+ <div class="right">
+            <div id="rank_list" class="conFrame">
+                <div class="title cf">
+                    <span>积分榜</span>
+                    <a href="{:U('data/index')}" target="_blank">更多</a>
+                </div>
+                <div class="tab" id="rank">
+					<a href="javascript:void(0)" rel="23" class="zc_data sel">中超</a>
+					<a href="javascript:void(0)" rel="13" class="yc_data">英超</a>
+					<a href="javascript:void(0)" rel="15" class="xj_data">西甲</a>
+					<a href="javascript:void(0)" rel="16" class="dj_data">德甲</a>
+					<a href="javascript:void(0)" rel="14" class="yj_data">意甲</a>
+				</div>
+				<table class="cell_rank"  rel="23" style="display:">
+					<tbody>
+						<tr>
+                            <th class="rank">排名</th>
+                            <th class="team_name">球队</th>
+                            <th class="rel">胜/平/负</th>
+                            <th class="stat">积分</th>
+                        </tr>
+						<volist name="zhongchao_league_integral" id="vo">
+							<tr>
+								<td><span class="top_{$key+1}">{$key+1}</span></td>
+								<td class="team_name">
+									<img src="{$vo.icon}" alt="">
+									{$vo.name}
+								</td>
+								<td>{$vo.league_win}/ {$vo.league_equal}
+									/{$vo.league_fail}</td>
+								<td>{$vo.league_integral}</td>
+							</tr>
+						</volist>
+					</tbody>
+				</table>
+                <table class="cell_rank" rel="13" style="display:none">
+					<tbody>
+						<tr>
+							<th class="rank">排名</th>
+							<th class="team_name">球队</th>
+							<th class="rel">胜/平/负</th>
+							<th class="stat">积分</th>
+						</tr>
+						<tr>
+							<td><span class="top_1">1</span></td>
+							<td class="team_name">
+								<img src="__PUBLIC__/image/661.png" alt="">
+								切尔西
+							</td>
+							<td>16 / 1
+								/ 3</td>
+							<td>49</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="cell_rank" rel="15" style="display:none">
+						<tbody>
+						<tr>
+							<th class="rank">排名</th>
+							<th class="team_name">球队</th>
+							<th class="rel">胜/平/负</th>
+							<th class="stat">积分</th>
+						</tr>
+						<tr>
+							<td><span class="top_1">1</span></td>
+							<td class="team_name">
+								<img src="__PUBLIC__/image/2016.png" alt="">
+								皇家马德里
+							</td>
+							<td>12 / 4
+								/ 0</td>
+							<td>40</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="cell_rank" rel="16" style="display:none">
+					<tbody>
+						<tr>
+							<th class="rank">排名</th>
+							<th class="team_name">球队</th>
+							<th class="rel">胜/平/负</th>
+							<th class="stat">积分</th>
+						</tr>
+						<tr>
+							<td><span class="top_1">1</span></td>
+							<td class="team_name">
+								<img src="__PUBLIC__/image/961.png" alt="">
+								拜仁慕尼黑
+							</td>
+							<td>12 / 3
+								/ 1</td>
+							<td>39</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="cell_rank" rel="14" style="display:none">
+					<tbody>
+						<tr>
+							<th class="rank">排名</th>
+							<th class="team_name">球队</th>
+							<th class="rel">胜/平/负</th>
+							<th class="stat">积分</th>
+						</tr>
+						<tr>
+							<td><span class="top_1">1</span></td>
+							<td class="team_name">
+								<img src="__PUBLIC__/image/1242.png" alt="">
+								尤文图斯
+							</td>
+							<td>15 / 0
+								/ 3</td>
+							<td>45</td>
+						</tr>
+													   
+					 </tbody>
+				 </table>
+		</div>
+            <div id="hot_list" class="conFrame">
+                <div class="title cf">
+                    <span>新闻热评</span>
+                </div>
+                <dl>
+					<volist name="comment" id="vo">
+						<dt class="cf">
+							<img src="{$vo.headimg}" alt="">
+							<h4>{$vo.username}</h4>
+							<span class="time">{$vo.updatetime|date='Y-m-d H:i:s',###}</span>
+							<if condition="$_SESSION['username'] neq ''">
+								<a href="javascript:void(0);" onclick="up({$vo.comment_id})" class="zan" name="up_{$vo.comment_id}">赞（{$vo.fabulous}）</a>
+							<else/>
+								<a href="javascript:void(0);" onclick="maskShow('unlogin')" class="zan" name="up_{$vo.comment_id}">赞（{$vo.fabulous}）</a>
+							</if>
+						</dt>
+						<dd>
+							<p>{$vo.content}</p>
+							<span>评论于 <a href="{:U('index/show',array('id'=>$vo['news_id']))}" target="_blank">{$vo.title}</a></span>
+						</dd>
+					</volist>
+				</dl>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+<!-- 积分榜 -->
+	$(function(){
+		$(".tab a").click(function(){
+			$(this).addClass("sel").siblings().removeClass("sel");
+			var index=$(this).index();
+			$("table").not(index).hide();
+			$("table").eq(index).show();
+			
+		});
+	});
+</script>
+<script>
+var news_id = getUrlParam('id');
+<!-- 赞 -->
+	var up = function (id) {
+			var url = "{:U('Index/up')}";
+			var comment_id = id;
+			var _data = {
+                'comment_id': comment_id,
+				'news_id': news_id,
+            };
+            $.ajax({
+                type: "post",
+                url: url,
+				data: _data,
+                success: function (data) {
+                    if (data.errCode) {
+                        blinkShow(data.errMsg);
+                        return;
+                    }
+                    blinkShow("赞 +1");
+                    var name = "[name=up_" + id + "]";
+                    $(name).html("赞（" + data + "）");
+                },
+                error: function (data) {
+                    if (data.status == 401) {
+                        maskShow("unlogin");
+                        return;
+                    }
+                }
+            });
+
+        }
+</script>
+<script src="__PUBLIC__/js/YuxiSlider.jQuery.min.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+           <!-- src = "https://hm.baidu.com/hm.js?662abe3e1ab2558f09503989c9076934"; -->
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+	
+	$(".slider").YuxiSlider({
+	width:640, //容器宽度
+	height:400, //容器高度
+	control:$('.control'), //绑定控制按钮
+	during:4000, //间隔4秒自动滑动
+	speed:800, //移动速度0.8秒
+	mousewheel:false, //是否开启鼠标滚轮控制
+	direkey:true //是否开启左右箭头方向控制
+});
+</script>
